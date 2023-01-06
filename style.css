@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 10rem auto;
+}
+.ab {
+  background-color: rgb(60, 60, 300);
+}
+
+.head {
+  grid-area: h;
+}
+.s1 {
+  grid-area: s1;
+}
+.s2 {
+  grid-area: s2;
+}
+.s3 {
+  grid-area: s3;
+}
+.main {
+  grid-area: m;
+}
+.sidebar {
+  grid-area: sb;
+}
+.footer {
+  grid-area: f;
+}
+
+.container {
+  width: 90%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(4.1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "h h h h"
+    "s1 s2 s3 sb"
+    "m m m sb"
+    "f f f f";
+  gap: 10px;
+  color: beige;
+  text-align: center;
+  font-size: 25px;
+}
